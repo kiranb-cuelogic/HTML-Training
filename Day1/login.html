@@ -1,0 +1,90 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- <link rel="stylesheet" href="css/styles.css"> -->
+		<title>
+			Login
+		</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				background: #ffffff;
+				color: #52527a;
+				font-family: sans-serif;
+			}
+			a {
+				color: #4d94ff;
+			}
+			section.container {
+			    margin: 10% auto;
+			    padding: 15px;
+			    top: 0;
+			    bottom: 0;
+			    left: 0;
+			    right: 0;
+			    width: 50%;
+			    text-align: center;
+				background: #e5f0ff;
+				border: 1px solid #4d93ff;
+				border-radius: 5px;
+			}
+			section h2 {
+				border-bottom: 1px solid #ccc;
+			    padding: 15px;
+			}
+			form label {
+				color: #4d93ff;
+				display: block;
+			}
+			form input {
+				width: 80%;
+				padding: 5px 15px;
+				border: 1px solid #4d93ff;
+				border-radius: 5px;
+				color: #52527a;
+			}
+			form div {
+				padding: 15px 15px 15px 80px;
+			    text-align: left;
+			}
+			a.btn-link {
+			    color: #52527a;
+			    padding: 7px 15px;
+			    border-radius: 5px;
+			    border: 1px solid #999;
+			    background: #ccc;
+			    text-decoration: none;
+			}	
+		</style>
+	</head>
+	
+	<body>
+		<main>
+			<section class="container">
+				<h2>Login to Html Training</h2>
+				<!--Login form start-->				
+				<form>
+					<div>
+						<label for="userName">Username:</label>
+						<input name="userName" type="text" placeholder="Enter user name" required>
+					</div>
+					<div>
+						<label for="password">Password:</label>
+						<input name="password" type="password" placeholder="Enter password" required>
+					</div>
+					<div>
+						<a href="javascript:void(0);">Forget password?</a>
+						<a href="signup.html">Sign up</a>
+					</div>
+						<a href="index.html" class="btn-link">Login</a>
+				</form>
+				<!--Login form end-->				
+			</section>
+		</main>
+	</body>
+
+</html>
