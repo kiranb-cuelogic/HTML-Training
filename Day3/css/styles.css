@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    color: #52527a;
+    font-family: sans-serif;
+}
+
+a {
+    color: #4d94ff;
+}
+
+section.container {
+    margin: 10% auto;
+    padding: 15px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    text-align: center;
+    background: #e5f0ff;
+    border: 1px solid #4d93ff;
+    border-radius: 5px;
+}
+
+section h2 {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+
+header,
+footer {
+    width: 100%;
+    display: inline-block;
+    padding: 20px 0;
+    background: #e5f0ff;
+}
+
+article {
+    display: inline-block;
+    width: 100%;
+}
+
+
+/* nav start */
+
+header nav ul {
+    list-style: none;
+    text-align: right;
+    margin: 25px 50px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 25px;
+}
+
+header nav ul li a {
+    color: #52527a;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #ccc;
+}
+
+header nav {
+    width: 80%;
+    height: 50px;
+    float: right;
+}
+
+header div {
+    text-align: center;
+    width: 20%;
+    height: 50px;
+    float: left;
+}
+
+header a img {
+    width: 100px;
+    height: 50px;
+}
+
+
+/* nav end */
+
+
+/* form start */
+
+form label {
+    color: #4d93ff;
+    display: block;
+}
+
+form input {
+    width: 80%;
+    padding: 5px 15px;
+    border: 1px solid #4d93ff;
+    border-radius: 5px;
+    color: #52527a;
+}
+
+form input:required:invalid, input:focus:invalid {
+    color: #FF0000;
+}
+
+form button {
+    color: #52527a;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form div {
+    padding: 15px 15px 15px 80px;
+    text-align: left;
+}
+
+
+/* form end */
+
+
+/* home start */
+
+.banner {
+    padding: 50px;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.thumbnail {
+    background: #e5f0ff;
+    padding: 25px;
+    text-align: center;
+    width: 29%;
+    display: inline-block;
+    margin: 25px 2px;
+}
+
+.thumbnail figure {
+    display: inline-block;
+    padding: 15px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+a.btn-link {
+    color: #52527a;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    background: #ccc;
+    text-decoration: none;
+}
+
+
+/* home end */
+
+
+/* blog start */
+
+#blog {
+    width: 80%;
+    background: #c1c1c1;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#blog header {
+    background: #ff9;
+}
+
+.blog-content {
+    width: 100%;
+    height: 250px;
+}
+
+.blog-content h4 {
+    margin: 20px;
+    text-align: center;
+}
+
+.blog-content aside,
+.blog-content section {
+    float: left;
+    height: 100%;
+}
+
+.blog-content aside {
+    width: 20%;
+    background: #ebebeb;
+}
+
+.blog-content section {
+    width: 75%;
+    height: auto;
+    background: #ccc;
+}
+
+.aside-nav,
+.blog-thumbnail {
+    margin: 1%;
+}
+
+.aside-nav ul li {
+    padding: 10px;
+    list-style-type: none;
+}
+
+.aside-nav h5 {
+    margin: 20px;
+}
+
+.blog-thumbnail article {
+    width: 48%;
+    background: #ebebeb;
+    height: 100px;
+    margin: 8px;
+    float: left;
+}
+
+
+/* blog end */
+
+
+/* table start */
+
+table.dataTable {
+    width: 100%;
+    border-spacing: 0px;
+    margin: 25px 0;
+    text-align: center;
+    background: #e5f0ff;
+    border: 1px solid #ccc;
+}
+
+table.dataTable th {
+    background: #e5f0ff;
+    padding: 10px;
+}
+
+table.dataTable td {
+    padding: 10px;
+    border: 1px solid #e5f0ff;
+}
+
+table.dataTable tr:nth-child(odd) {
+    background: #F1F9FF;
+}
+
+table.dataTable tr:nth-child(even) {
+    background: #fff;
+}
+
+
+/* table end */
+
+
+/* list start */
+
+ul.listGrid {
+	margin: 25px 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.listGrid > li:nth-child(odd) {
+    background: #F1F9FF;
+}
+
+ul.listGrid > li:nth-child(even) {
+    background: #fff;
+}
+
+ul.listGridRow li {
+    border: 1px solid #e5f0ff;
+    margin-right: -4px;
+    display: inline-block;
+    padding: 10px;
+    width: 16%;
+}
+
+ul.listGridRow li:last-child {
+    width: 63%;
+}
+
+/* list end */
