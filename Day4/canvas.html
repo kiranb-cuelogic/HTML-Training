@@ -1,0 +1,60 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>
+        HTML Training - Blog
+        <!-- descriptive title tag for SEO -->
+    </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML Training">
+    <meta name="keywords" content="HTML, HTML5">
+    <meta name="author" content="Kiran">
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="javascript:void(0);"><img src="images/logo.png"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">SignOut</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <div class="canvas-container">
+                <canvas id="text">Your browser does not support the HTML5 canvas tag.</canvas>
+            </div>
+            <div class="canvas-container">
+                <canvas id="text">Your browser does not support the HTML5 canvas tag.</canvas>
+            </div>
+        </section>
+    </main>
+    <footer>Copy Rights</footer>
+    <script>
+    var c = document.getElementById("text");
+    var ctx = c.getContext("2d");
+    ctx.font = "34px Arial";
+    ctx.fillText("Hello World", 50, 80);
+
+    // Create gradient
+    var grd = ctx.createLinearGradient(0, 0, 200, 0);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(0, 50, 800, 50);
+    </script>
+</body>
+
+</html>

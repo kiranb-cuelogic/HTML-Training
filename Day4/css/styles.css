@@ -333,3 +333,17 @@ ul.listGridRow li:last-child {
 }
 
 /* list end */
+
+/* canvas start */
+canvas {
+    width:200px;
+    height:100px;
+}
+.canvas-container {
+    border:1px solid #d3d3d3;
+    display: inline-block;
+    width: 45%;
+    margin: 13px;
+    background-color: #ff9;
+}
+/* canvas end */
