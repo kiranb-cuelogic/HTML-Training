@@ -4,7 +4,6 @@
 <head>
     <title>
         HTML Training - Blog
-        <!-- descriptive title tag for SEO -->
     </title>
     <meta charset="UTF-8">
     <meta name="description" content="HTML Training">
@@ -31,8 +30,27 @@
     </header>
     <main>
         <section class="container">
-            <div class="canvas-container">
+            <!-- <div class="canvas-container">
                 <canvas id="text">Your browser does not support the HTML5 canvas tag.</canvas>
+            </div> -->
+            <div class="canvas-container">
+                <p>Text</p>
+                <canvas id="text">Your browser does not support the HTML5 canvas tag.</canvas>
+            </div>
+            <div class="canvas-container">
+                <p>Line</p>
+                <canvas id="line">Your browser does not support the HTML5 canvas tag.</canvas>
+            </div>
+            <div class="canvas-container">
+                <p>Circle</p>
+                <canvas id="circle">Your browser does not support the HTML5 canvas tag.</canvas>
+            </div>
+            <div class="canvas-container">
+                <p>Rectangle</p>
+                <canvas id="rectangle">Your browser does not support the HTML5 canvas tag.</canvas>
+            </div>
+            <div class="canvas-container">
+                <canvas id="">Your browser does not support the HTML5 canvas tag.</canvas>
             </div>
             <div class="canvas-container">
                 <canvas id="text">Your browser does not support the HTML5 canvas tag.</canvas>
@@ -41,19 +59,38 @@
     </main>
     <footer>Copy Rights</footer>
     <script>
-    var c = document.getElementById("text");
-    var ctx = c.getContext("2d");
-    ctx.font = "34px Arial";
-    ctx.fillText("Hello World", 50, 80);
+    var text = document.getElementById("text");
+    var textCtx = text.getContext("2d");
+    textCtx.font = "34px Arial";
+    textCtx.fillText("Hello World", 50, 80);
 
     // Create gradient
-    var grd = ctx.createLinearGradient(0, 0, 200, 0);
-    grd.addColorStop(0, "red");
-    grd.addColorStop(1, "white");
+    // var grd = ctx.createLinearGradient(0, 0, 200, 0);
+    // grd.addColorStop(0, "red");
+    // grd.addColorStop(1, "white");
 
-    // Fill with gradient
-    ctx.fillStyle = grd;
-    ctx.fillRect(0, 50, 800, 50);
+    // // Fill with gradient
+    // ctx.fillStyle = grd;
+    // ctx.fillRect(0, 50, 800, 50);
+
+    var line = document.getElementById("line");
+    var lineCtx = line.getContext("2d");
+    lineCtx.moveTo(0, 50);
+    lineCtx.lineTo(500, 50);
+    lineCtx.stroke();
+
+    var circle = document.getElementById("circle");
+    var circleCtx = circle.getContext("2d");
+    circleCtx.beginPath();
+    circleCtx.arc(145, 60, 40, 0, 2 * Math.PI);
+    circleCtx.fillStyle = 'green';
+    circleCtx.fill();
+    circleCtx.stroke();
+
+    var rectangle = document.getElementById("rectangle");
+    var rectangle = rectangle.getContext("2d");
+    rectangle.fillStyle = "#FF0000";
+    rectangle.fillRect(0, 20, 300, 100);
     </script>
 </body>
 
