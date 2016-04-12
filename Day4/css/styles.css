@@ -97,7 +97,8 @@ form label {
     display: block;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 80%;
     padding: 5px 15px;
     border: 1px solid #4d93ff;
@@ -105,9 +106,11 @@ form input, form textarea {
     color: #52527a;
 }
 
-form input:required:invalid, input:focus:invalid {
+form input:required:invalid,
+input:focus:invalid {
     color: #FF0000;
 }
+
 
 /*form button {
     color: #52527a;
@@ -116,6 +119,7 @@ form input:required:invalid, input:focus:invalid {
     border: 1px solid #ccc;
 }
 */
+
 form div {
     padding: 15px 15px 15px 80px;
     text-align: left;
@@ -227,10 +231,14 @@ form div {
 .blog-thumbnail article {
     width: 48%;
     background: #ebebeb;
-    height: 100px;
+    height: 275px;
     margin: 8px;
     float: left;
     position: relative;
+}
+
+.blog-thumbnail video, .blog-thumbnail iframe {
+    margin: 0 29px;
 }
 
 .overlay {
@@ -245,6 +253,7 @@ form div {
 .overlay:hover {
     opacity: 0.2;
 }
+
 
 /*.blog-thumbnail article .overlay:hover {
     opacity: 0;
@@ -267,6 +276,7 @@ form div {
     width: 95%;
     margin: auto;
 }
+
 
 /* blog end */
 
@@ -307,7 +317,7 @@ table.dataTable tr:nth-child(even) {
 /* list start */
 
 ul.listGrid {
-	margin: 25px 0;
+    margin: 25px 0;
     list-style-type: none;
     text-align: center;
 }
@@ -332,18 +342,24 @@ ul.listGridRow li:last-child {
     width: 63%;
 }
 
+
 /* list end */
 
+
 /* canvas start */
+
 canvas {
-    width:200px;
-    height:100px;
+    width: 200px;
+    height: 100px;
 }
+
 .canvas-container {
-    border:1px solid #d3d3d3;
+    border: 1px solid #d3d3d3;
     display: inline-block;
     width: 45%;
     margin: 13px;
     background-color: #ff9;
 }
+
+
 /* canvas end */
