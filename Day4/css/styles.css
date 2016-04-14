@@ -74,7 +74,7 @@ header nav {
     float: right;
 }
 
-header div {
+header a {
     text-align: center;
     width: 20%;
     height: 50px;
@@ -187,9 +187,12 @@ form div {
     background: #ff9;
 }
 
+#blog h4 {
+    padding: 20px 30px 8px;
+}
+
 .blog-content {
-    width: 100%;
-    height: 250px;
+   overflow: hidden;
 }
 
 .blog-content h4 {
@@ -208,9 +211,9 @@ form div {
     background: #ebebeb;
 }
 
-.blog-content section {
+.blog-thumbnail {
     width: 75%;
-    height: auto;
+    /*height: auto;*/
     background: #ccc;
 }
 
@@ -237,7 +240,8 @@ form div {
     position: relative;
 }
 
-.blog-thumbnail video, .blog-thumbnail iframe {
+.blog-thumbnail video,
+.blog-thumbnail iframe {
     margin: 0 29px;
 }
 
@@ -261,15 +265,14 @@ form div {
 
 .overlay i {
     text-align: center;
-    width: 100%;
-    height: 100%;
+    width: 50px;
+    height: 50px;
     position: absolute;
-    top: 30%;
-    /*top: 0;*/
-    /* bottom: 0; */
-    /* right: 0; */
-    /* left: 0; */
-    /* margin: auto; */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .blog-iframe {
